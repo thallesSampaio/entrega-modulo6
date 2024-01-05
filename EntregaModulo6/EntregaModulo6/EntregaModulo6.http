@@ -1,0 +1,6 @@
+@EntregaModulo6_HostAddress = http://localhost:5287
+
+GET {{EntregaModulo6_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
