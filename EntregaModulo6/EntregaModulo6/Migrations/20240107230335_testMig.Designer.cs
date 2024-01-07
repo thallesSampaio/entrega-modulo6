@@ -2,6 +2,7 @@
 using EntregaModulo6.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,9 +10,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EntregaModulo6.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20240107230335_testMig")]
+    partial class testMig
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -53,27 +56,6 @@ namespace EntregaModulo6.Migrations
                             duracao = "2 dias / 1 noite",
                             nome = "RJTRIP STANDARD",
                             preco = 2500f
-                        },
-                        new
-                        {
-                            Id = 2,
-                            duracao = "3 dias / 2 noites",
-                            nome = "RJTRIP PREMIUM",
-                            preco = 2750f
-                        },
-                        new
-                        {
-                            Id = 3,
-                            duracao = "7 dias / 6 noites",
-                            nome = "RJTRIP SUPER PREMIUM",
-                            preco = 4500f
-                        },
-                        new
-                        {
-                            Id = 4,
-                            duracao = "2 dias / 1 noites",
-                            nome = "RJTRIP IMPERIAL",
-                            preco = 2900f
                         });
                 });
 #pragma warning restore 612, 618
