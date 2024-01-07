@@ -11,9 +11,7 @@ namespace EntregaModulo6.Data
 
         }
 
-        public DbSet<Cliente> Cliente { get; set; }
-
-        public DbSet<Mensagem> Mensage { get; set; }
+        public DbSet<Pacote> Pacote { get; set;}
 
     }
 }
